@@ -1,0 +1,27 @@
+create database hu2k16;
+
+CREATE USER 'hasher-read';
+
+CREATE USER 'hasher-write';
+
+GRANT SELECT ON *.* TO 'hasher-read';
+
+GRANT ALL ON *.* TO 'hasher-write';
+
+
+CREATE TABLE linker_info
+ (Fname VARCHAR(10), 
+Lname VARCHAR(20),
+Address VARCHAR(30)
+);
+
+
+insert into linker_info values
+('poshan','bastola','manglampallya');
+
+insert into linker_info values
+('rahul','sharma','hsr2');
+
+insert into linker_info values
+('baibhav','kumar','hsr2');
+
